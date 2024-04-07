@@ -1,0 +1,20 @@
+{
+  "name": "project-wdc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.2.8"
+  },
+  "dependencies": {
+    "taos": "^1.0.5"
+  }
+}
