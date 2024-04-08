@@ -38,4 +38,8 @@ https://dolantegal.netlify.app/
 ![App Screenshot](https://github.com/irsyamokta/DolanTegal-project/blob/30a92ea2aa6e90a73a84c20f954e508600c481e8/public/assets/ss%206.png)
 
 
+## Authors
+
+- [@irsyamokta](https://github.com/irsyamokta)
+- [@agamnsy](https://github.com/agamnsy)
 
