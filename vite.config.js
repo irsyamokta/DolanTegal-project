@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
+import { VitePWA } from 'vite-plugin-pwa';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -9,6 +10,32 @@ export default defineConfig({
   publicDir: 'public',
 
   build: {
+    plugins: [
+      VitePWA({
+        registerType: 'autoUpdate',
+        devOptions: {
+          enabled: true
+        },
+        manifest: {
+          name: 'DolanTegal App',
+          short_name: 'Dolan Tegal',
+          description: 'This is my Progressive Web App',
+          theme_color: '#ffffff',
+          icons: [
+            {
+              src: 'icon-192x192.png',
+              sizes: '192x192',
+              type: 'image/png'
+            },
+            {
+              src: 'icon-512x512.png',
+              sizes: '512x512',
+              type: 'image/png'
+            }
+          ]
+        }
+      }),
+    ],
     
     outDir: 'dist',
     
